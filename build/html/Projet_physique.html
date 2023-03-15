@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>projet_physique &mdash; Documentation Projet_physique 1.0.0</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="#" class="icon icon-home"> Projet_physique
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Rechercher docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">projet_physique</a></li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Projet_physique</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+      <li>projet_physique</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> Afficher la source de la page</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="projet-physique">
+<h1>projet_physique<a class="headerlink" href="#projet-physique" title="Lien permanent vers ce titre"></a></h1>
+<dl class="simple">
+<dt>def typedecable(x):</dt><dd><p>Ce fonction est de choisir un type de cable</p>
+<dl class="field-list simple">
+<dt class="field-odd">param x</dt>
+<dd class="field-odd"><p>soit 1 soit 2</p>
+</dd>
+<dt class="field-even">return</dt>
+<dd class="field-even"><p>une phrase et int(x)</p>
+</dd>
+<dt class="field-odd">exemple</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</dd>
+<dt>typedecable(1):</dt><dd><p>return :x = 1 avec l’affichage « Vous avez choisir un cylindre de rayon R parcouru par un courant d’intensité I uniformément réparti dans la section du cylindre »</p>
+</dd>
+<dt>typedecable(2):</dt><dd><p>return :x=2 avec l’affichage « Vous avez choisir un cylindre de rayon R parcouru par un courant d’intensité I uniformément réparti à la surface du cylindre »</p>
+</dd>
+<dt>def valeurdecable(ordredeR, postiondeR, choix, valeurdeI):</dt><dd><p>Ce fonction est de calcuer la valeur de magnetique en postiondeR (en mètre)</p>
+<dl class="field-list simple">
+<dt class="field-odd">param ordredeR</dt>
+<dd class="field-odd"><p>l’ordre de R : soit R1 soit R2</p>
+</dd>
+<dt class="field-even">param postiondeR</dt>
+<dd class="field-even"><p>la position de r en mètre entre 0 et n (n =  c’est utilisatuer qui va decider)</p>
+</dd>
+<dt class="field-odd">param choix</dt>
+<dd class="field-odd"><p>un type de cable soit 1 soit 2</p>
+</dd>
+<dt class="field-even">param valeurdeI</dt>
+<dd class="field-even"><p>valeur de I</p>
+</dd>
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>valeur de magnétique</p>
+</dd>
+<dt class="field-even">exemple</dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+</dd>
+</dl>
+<p>valeurdecable(R1,0.5,2,5): # avec R1 : 0.3 m et R2 0.7m
+return = 0.0000020000000000000003330126972789226869053891277872025966644287109375</p>
+<p>valeurdecable(R2,0.5,2,5):
+return = 0 (comme ce type de cable est intensité I uniformément réparti à la surface du cylindre)</p>
+<p>valeurdecable(R2,0.5,1,5):
+return = 0.0000010204081632653064652172837656340931289378204382956027984619140625</p>
+<dl class="simple">
+<dt>def cham_mag(x,R1,R2,choix_R1,choix_R2,I1,I2):</dt><dd><p>Ce fonction fait calculer la somme de valeur magnétique.</p>
+<dl class="field-list simple">
+<dt class="field-odd">param x</dt>
+<dd class="field-odd"><p>la valeur de R, c’est a dit position</p>
+</dd>
+<dt class="field-even">param R1</dt>
+<dd class="field-even"><p>le rayon de R1</p>
+</dd>
+<dt class="field-odd">param R2</dt>
+<dd class="field-odd"><p>le rayon de R2</p>
+</dd>
+<dt class="field-even">param choix_R1</dt>
+<dd class="field-even"><p>un type de cable de R1</p>
+</dd>
+<dt class="field-odd">param choix_R2</dt>
+<dd class="field-odd"><p>un type de cable de R2</p>
+</dd>
+<dt class="field-even">param I1</dt>
+<dd class="field-even"><p>la valeur de I1</p>
+</dd>
+<dt class="field-odd">param I2</dt>
+<dd class="field-odd"><p>la valeur de I2</p>
+</dd>
+<dt class="field-even">return</dt>
+<dd class="field-even"><p>la valeur total magnetique en R</p>
+</dd>
+<dt class="field-odd">exemple</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</dd>
+</dl>
+<p>cham_mag(0.5): la meme condition que precedent(R1 : 0.3m, R2: 0.7m, I1 et I2 : 5 A)
+return = 0.000003020408163265306798229981045 (= valeurdecable(R1,0.5,2,5) + valeurdecable(R2,0.5,1,5))</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Hyun Joon YOO.</p>
+  </div>
+
+  Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
